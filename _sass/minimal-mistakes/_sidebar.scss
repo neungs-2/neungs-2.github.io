@@ -134,11 +134,11 @@
   }
 
   img {
-    max-width: 110px;
-    border-radius: 50%;
+    max-width: 140px;
+    border-radius: 25%;
 
     @include breakpoint($large) {
-      padding: 5px;
+      padding: 2px;
       border: 1px solid $border-color;
     }
   }
@@ -265,7 +265,7 @@
 
   &::before {
     display: block;
-    content: "";
+    content: '';
     position: absolute;
     top: -11px;
     inset-inline-start: calc(50% - 10px);
@@ -282,7 +282,7 @@
 
   &:after {
     display: block;
-    content: "";
+    content: '';
     position: absolute;
     top: -10px;
     inset-inline-start: calc(50% - 10px);

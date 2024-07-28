@@ -12,31 +12,31 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin: 'default' # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin: 'contrast' # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale: 'en-US'
+locale: 'ko-KR'
 rtl: # true, false (default) # turns direction of the page into right to left for RTL languages
-title: 'Site Title'
-title_separator: '-'
-subtitle: # site tagline that appears below site title in masthead
-name: 'Your Name'
-description: 'An amazing website.'
-url: # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+title: 'Dev Insight'
+title_separator: '&#124;'
+subtitle: '통찰력을 지닌 개발자가 되기 위하여' # site tagline that appears below site title in masthead
+name: 'Dev Insight'
+description: "Logan's DevLog."
+url: 'https://neungs-2.github.io' # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl: # the subpath of your site, e.g. "/blog"
-repository: # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo: # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title: # overrides the website title displayed in the masthead, use " " for no title
+repository: 'neungs-2/neungs-2.github.io' # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+teaser: 'assets/images/dev-insight-logo.png' # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+logo: 'assets/images/dev-insight-logo.png' # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+masthead_title: 'Dev Insight' # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs: # true, false (default)
 words_per_minute: 200
 enable_copy_code_button: # true, false (default)
 copyright: # "copyright" name, defaults to site.title
 copyright_url: # "copyright" URL, defaults to site.url
 comments:
-  provider: # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
+  provider: 'disqus' # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus:
-    shortname: # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname: 'neungs-2/neungs-2.github.io' # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
     server: # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -95,7 +95,7 @@ facebook:
   username:
   app_id:
   publisher:
-og_image: # Open Graph/Twitter default site image
+og_image: 'assets/images/dev-insight-logo.png' # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -112,18 +112,18 @@ analytics:
 
 # Site Author
 author:
-  name: 'Your Name'
-  avatar: # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio: 'I am an **amazing** person.'
-  location: 'Somewhere'
-  email:
+  name: 'Kwonneung Lee'
+  avatar: 'assets/images/avatar.jpeg' # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio: '매일 성장하고 싶은 3년차 개발자.'
+  location: 'Seoul, Republic of Korea'
+  # email: 'gnlee95@gmail.com'
   links:
     - label: 'Email'
       icon: 'fas fa-fw fa-envelope-square'
-      # url: "mailto:your.name@email.com"
+      url: 'mailto:gnlee95@gmail.com'
     - label: 'Website'
       icon: 'fas fa-fw fa-link'
-      # url: "https://your-website.com"
+      url: 'https://neungs-2.github.io/'
     - label: 'Twitter'
       icon: 'fab fa-fw fa-twitter-square'
       # url: "https://twitter.com/"
@@ -132,7 +132,7 @@ author:
       # url: "https://facebook.com/"
     - label: 'GitHub'
       icon: 'fab fa-fw fa-github'
-      # url: "https://github.com/"
+      url: 'https://github.com/neungs-2'
     - label: 'Instagram'
       icon: 'fab fa-fw fa-instagram'
       # url: "https://instagram.com/"
@@ -148,7 +148,7 @@ footer:
       # url:
     - label: 'GitHub'
       icon: 'fab fa-fw fa-github'
-      # url:
+      url: 'https://github.com/neungs-2'
     - label: 'GitLab'
       icon: 'fab fa-fw fa-gitlab'
       # url:
