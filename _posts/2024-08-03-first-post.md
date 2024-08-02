@@ -7,6 +7,11 @@ categories:
 tags:
   - MongoDB
   - Conference
+
+toc: true
+toc_sticky: true
+
+date: 2024-08-03
 last_modified_at: 2024-08-03T02:30:00+09:00
 ---
 

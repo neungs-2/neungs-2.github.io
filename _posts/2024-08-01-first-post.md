@@ -6,6 +6,11 @@ categories:
   - Blog
 tags:
   - OAuth & OIDC
+
+toc: true
+toc_sticky: true
+
+date: 2024-08-03
 last_modified_at: 2024-08-01T00:23:30+09:00
 ---
 

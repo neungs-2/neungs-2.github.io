@@ -6,6 +6,11 @@ categories:
   - Design Pattern
 tags:
   - Design Pattern
+
+toc: true
+toc_sticky: true
+
+date: 2024-08-03
 last_modified_at: 2024-08-02T03:00:00+09:00
 ---
 
