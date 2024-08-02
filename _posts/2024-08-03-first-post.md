@@ -2,17 +2,13 @@
 title: 'MongoDB Korea Workshop'
 excerpt: '지난 2월 28일에 개최된 MongoDB 워크샵에 다녀왔습니다. 2022년도에 참석했던 대규모 컨퍼런스와는 다르게 기업회원 위주의 제한된 소수의 인원으로 진행된 교육 세션이었습니다.'
 
-categories:
-  - Conference
-tags:
-  - MongoDB
-  - Conference
+categories: Conference
+tags: [MongoDB, Conference]
 
 toc: true
 toc_sticky: true
 
 date: 2024-08-03
-last_modified_at: 2024-08-03T02:30:00+09:00
 ---
 
 # MongoDB 워크샵 참석

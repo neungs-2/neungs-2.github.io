@@ -2,16 +2,13 @@
 title: 'OAuth 2.0과 OIDC(OpenID Connect) 프로토콜'
 excerpt: '소셜 로그인 구현을 위해 가장 많이 쓰이고 있는 프로토콜은 OAuth 2.0과 OIDC가 있습니다. 이 두 프로토콜이 어떻게 인증 및 인가를 부여하는지 알아봅시다.'
 
-categories:
-  - Blog
-tags:
-  - OAuth & OIDC
+categories: Auth
+tags: OAuth & OIDC
 
 toc: true
 toc_sticky: true
 
-date: 2024-08-03
-last_modified_at: 2024-08-01T00:23:30+09:00
+date: 2024-08-01
 ---
 
 이제는 너무나도 익숙한 소셜 로그인은 유저와 기업 모두에게 매력적인 인증 방법입니다. 유저는 간편하게 로그인할 수 있고 기업은 신규 유저의 가입 장벽을 낮추고 신뢰성 있는 타기업에게 인증의 책임을 미룰 수 있죠. 소셜 로그인 구현을 위해 가장 많이 쓰이고 있는 프로토콜은 OAuth 2.0과 OIDC가 있습니다. 이 두 프로토콜이 어떻게 인증 및 인가를 부여하는지 알아봅시다.
