@@ -2,8 +2,8 @@
 title: 'OAuth 2.0과 OIDC(OpenID Connect) 프로토콜'
 excerpt: '소셜 로그인 구현을 위해 가장 많이 쓰이고 있는 프로토콜은 OAuth 2.0과 OIDC가 있습니다. 이 두 프로토콜이 어떻게 인증 및 인가를 부여하는지 알아봅시다.'
 
-categories: Auth
-tags: OAuth & OIDC
+categories: [Auth]
+tags: [OAuth & OIDC]
 
 toc: true
 toc_sticky: true

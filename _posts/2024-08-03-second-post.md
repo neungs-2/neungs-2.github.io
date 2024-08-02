@@ -2,10 +2,8 @@
 title: 'Spring과 NestJS 비교'
 excerpt: 'NestJS를 사용한 서버 개발을 하는 회사가 점점 늘어나면서 **Spring과 NestJS의 차이점**에 대해서 궁금해하실 분들이 계실 것 같습니다. 오늘은 NestJS로 커리어를 시작해서 현재는 Kotlin & Spring 프로젝트까지 개발 중인 저의 주관적인 의견을 소개해 드리려고 합니다.'
 
-categories:
-  - Framework
-tags:
-  - [Spring, NestJS, Framework]
+categories: [Framework]
+tags: [Spring, NestJS, Framework]
 
 toc: true
 toc_sticky: true
