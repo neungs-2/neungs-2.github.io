@@ -21,7 +21,7 @@ title: 'Dev Insight'
 title_separator: '&#124;'
 subtitle: '통찰력을 지닌 개발자가 되기 위하여' # site tagline that appears below site title in masthead
 name: 'Dev Insight'
-description: "Logan's DevLog."
+description: "Kwonneung's DevLog."
 url: 'https://neungs-2.github.io' # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl: # the subpath of your site, e.g. "/blog"
 repository: 'neungs-2/neungs-2.github.io' # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -308,7 +308,8 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
+      read_time: false
+      show_date: true
       comments: true
       share: true
       related: true
