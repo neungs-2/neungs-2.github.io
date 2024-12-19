@@ -15,6 +15,10 @@ date: 2024-10-20
 
 - [Josh Long Meetup](https://www.inflearn.com/course/offline/josh-long-meetup)
 
+![Josh Long Meetup](https://github.com/user-attachments/assets/53453b5f-1ae1-422d-a698-baee1ea430e2)
+
+<br>
+
 이번 밋업은 스프링 씬에서 세계적으로 유명한 Josh Long님이 'Bootiful Spring Boot: A DOGumentary' 라는 주제로 발표를 했습니다. 최신 Java, Spring Boot 기능을 이용해서 성능과 효율 및 안정성을 더 높일 수 있는 방식에 대한 강연이었습니다.
 
 강연에서 이야기한 핵심들을 요약하자면 다음과 같습니다.
