@@ -19,7 +19,7 @@ locale: 'ko-KR'
 rtl: # true, false (default) # turns direction of the page into right to left for RTL languages
 title: 'Dev Insight'
 title_separator: '&#124;'
-subtitle: '통찰력을 지닌 개발자가 되기 위하여' # site tagline that appears below site title in masthead
+subtitle: '' # site tagline that appears below site title in masthead
 name: 'Dev Insight'
 description: "Kwonneung's DevLog."
 url: 'https://neungs-2.github.io' # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
@@ -114,16 +114,16 @@ analytics:
 author:
   name: 'Kwonneung Lee'
   avatar: 'assets/images/avatar.jpeg' # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio: '문제에서 가능성을, 코드에서 해답을 찾는 개발자.'
+  bio: '성장을 위해 고민하고, 기록합니다.'
   location: 'Seoul, Republic of Korea'
   # email: 'gnlee95@gmail.com'
   links:
     - label: 'Email'
       icon: 'fas fa-fw fa-envelope-square'
       url: 'mailto:gnlee95@gmail.com'
-    - label: 'Website'
+    - label: 'Linked In'
       icon: 'fas fa-fw fa-link'
-      url: 'https://neungs-2.github.io/'
+      url: 'https://www.linkedin.com/in/kwonneung-lee-be1995/'
     - label: 'Twitter'
       icon: 'fab fa-fw fa-twitter-square'
       # url: "https://twitter.com/"
