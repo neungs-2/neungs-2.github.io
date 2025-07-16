@@ -18,7 +18,7 @@ date: 2025-03-30
 
 지난번 배포 과정 중 발생한 이슈와 해결 과정을 공유해보고자 합니다. 무중단 배포란 배포의 성공이나 실패 관계 없이 서비스가 중단되지 않아야 합니다. 하지만 배포 실패시 문제가 발생했고, 기존 실행중이던 프로세스가 계속 동작중이었지만 일부 기능이 동작하지 않았습니다. 결론부터 말하자면, **실행중인 jar 파일을 SFTP 덮어쓰면서 일부 클래스 로딩에 실패하는 문제**가 있었습니다. 실행중인 파일을 덮어쓰지 않는 것은 에러를 방지하기 위한 기본적인 사항이지만 사소한만큼 놓치기 쉬운 포인트라고 생각되어 오랜만에 포스트를 남깁니다.
 
-</br>
+<br>
 
 ## 1. 이슈 발생
 
@@ -55,7 +55,7 @@ Caused by: java.lang.ClassNotFoundException: org.springframework.validation.Defa
 Handler processing failed: java.lang.AssertionError: Package org.springframework.web.server has already been defined but it could not be found
 ```
 
-</br>
+<br>
 두 메시지는 공통적으로 **클래스 로딩 실패**를 의미합니다. JVM의 ClassLoader가 .jar 내부에서 클래스를 로딩하지 못했을 때 발생하며 보통은 jar 자체가 손상되었거나, zip entry 구조에 문제가 있을 때 발생합니다. 이외에도 의존성 버전을 잘못 맞추는 등 원인은 다양합니다.
 
 ClassLoader는 `loadClass()` 내부에서 Class를 정의하기 전에 `definePackageIfNecessary()`를 호출하여 Package를 먼저 정의합니다. 그리고 그 과정 중에 jar 파일에 접근해서 데이터를 동적으로 로딩합니다. 그래서 배포 당시의 타이밍에 따라 아래와 같은 에러 발생 케이스로 나뉜다고 추론할 수 있었습니다.
@@ -68,7 +68,7 @@ ClassLoader는 `loadClass()` 내부에서 Class를 정의하기 전에 `definePa
 
 결국, 클래스 로딩이 실패하는 에러 메시지를 통해서 jar 파일과 관련된 문제가 있다는 예상을 할 수 있었습니다.
 
-</br>
+<br>
 
 ### 젠킨스 파이프라인 및 배포 스크립트 분석
 
