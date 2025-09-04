@@ -19,13 +19,13 @@ date: 2025-09-03
 
 기존의 Source 시스템에서 Target 시스템으로 직접 데이터를 전송하는 경우에 시스템이 커질수록 데이터 전송 파이프라인이 복잡해질 수 있습니다. 이는 장애 발생 시 대응을 힘들게 하고 시스템 간 높은 결합도로 Target 시스템에 문제 발생 시 Source 시스템에도 영향을 줍니다.
 
-![before kafka](https://github-production-user-asset-6210df.s3.amazonaws.com/60606025/485417092-a9d6c039-33c3-444d-aae8-1ab914c3057c.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250904%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250904T022427Z&X-Amz-Expires=300&X-Amz-Signature=27caef2c1f54fd0facd94abad16107ba61ad6462d1a3ef4e8dd69fcbfe6f91a1&X-Amz-SignedHeaders=host)
+![before kafka](https://velog.velcdn.com/images/gnlee95/post/22d520fc-a071-4d41-9357-1d5f3a6b353a/image.png)
 
 <br>
 
 그래서 링크드인은 사내에서 발생하는 모든 이벤트/데이터의 흐름을 중앙에서 관리하는 카프카를 개발했습니다. 이로서 서비스 아키텍처를 깔끔하게 관리할 수 있고 시스템 간 결합도를 낮출 수 있었습니다.
 
-![after kafka](https://github-production-user-asset-6210df.s3.amazonaws.com/60606025/485419050-0079e12d-e313-45cc-ba60-c6dbfa0e1ed1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250904%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250904T022221Z&X-Amz-Expires=300&X-Amz-Signature=839ced76ff939d8b8b99daeea02d96d423909f548903b7cabe22f1887d2133d9&X-Amz-SignedHeaders=host)
+![after kafka](https://velog.velcdn.com/images/gnlee95/post/53fddd34-9088-42ce-9e0b-003b3871d93a/image.png)
 
 <br>
 
@@ -70,6 +70,8 @@ date: 2025-09-03
 <br>
 
 ## Consumer Lag
+
+![consumer lag](https://velog.velcdn.com/images/gnlee95/post/38b5c5b5-a854-4b2d-ac98-a4df4f56f09f/image.png)
 
 프로듀서가 데이터를 기록하는 속도와 컨슈머가 데이터를 소비하는 속도 사이에 차이가 발생하면 오프셋 간격이 벌어지는데, 이를 **Consumer Lag**이라고 합니다. Lag은 컨슈머가 제때 데이터를 처리하지 못하고 있다는 신호이므로, 실시간성을 요구하는 시스템에서는 중요한 모니터링 지표가 됩니다. 여러 파티션이 있을 경우 가장 큰 Lag을 `records-lag-max`로 정의하여 관리합니다.
 
