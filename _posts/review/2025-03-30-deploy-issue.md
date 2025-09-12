@@ -1,6 +1,6 @@
 ---
 title: '[회고] NGINX 무중단 배포 이슈 및 스크립트 개선'
-excerpt: '이번 프로젝트에서 블록체인 지갑의 Private key 암호화 및 ECDSA 서명을 HSM을 이용하기로 했습니다. 어플리케이션 서버와 HSM 간의 연동은 업체에서 지원해주는 Luna Client 를 사용해서 구현했습니다.'
+excerpt: '무중단 배포란 배포의 성공이나 실패 관계 없이 서비스가 중단되지 않아야 합니다. 하지만 배포 실패시 문제가 발생했고, 기존 실행중이던 프로세스가 계속 동작중이었지만 일부 기능이 동작하지 않았습니다.'
 
 categories: [Review]
 tags: [Review, Deploy, ClassLoader]
