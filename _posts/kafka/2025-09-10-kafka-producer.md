@@ -13,7 +13,7 @@ date: 2025-09-10
 
 ## Kafka Producer
 
-![Kafka Producer](https://velog.velcdn.com/images/gnlee95/post/01839ac5-2bf9-4386-865a-054551fdafaa/image.png)
+![Kafka Producer](https://velog.velcdn.com/images/gnlee95/post/27e70aa8-5798-45e6-832e-578b6a2a9cc4/image.png)
 
 프로듀서는 애플리케이션에서 발생한 이벤트를 카프카 토픽에 전달하는 주체입니다. 즉, 카프카의 쓰기 진입점이므로 성능, 안정성, 메시지 순서를 보장하는데 중요한 역할을 합니다. 주요 역할은 다음과 같습니다.
 - 메시지를 직렬화(serialize)하여 네트워크로 전송
