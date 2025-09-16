@@ -172,9 +172,23 @@ OIDC의 동작 흐름에서 가장 눈에 띄는 차이가 ID token의 유무입
 
 ## OAuth 2.0, OIDC 중 무엇을 사용해야 할까?
 
-&nbsp; 정리하자면, **가능하면 OIDC를 쓰되 필요로 하는 IDP에서 제공하는 방식을 사용**하면 된다고 생각합니다. OAuth 2.0은 인가, OIDC는 인증에 중점을 둔다고는 하지만 큰 차이점은 없었습니다. (ID 토큰과 더 강력한 표준화를 곁들인?) 오히려 OAuth와 OIDC 보다는 자사 서비스의 유저들이 어떤 IDP로 연결했을 때 회원가입 없이 로그인할 수 있을지가 더 중요할 것입니다. 이때 OAuth 2.0 만 제공하는 IDP라면 OAuth 2.0을 쓸 수 밖에 없을 것이고 구글처럼 OpenID가 적용된 OAuth가 기본 사양이라면 OIDC를 쓰지 않을 수 없을 것 입니다.
+&nbsp; 정답은 없지만 OAuth 2.0은 인가, OIDC는 인증에 중점을 둡니다. 그래서 저는 IDP에서 제공하는 인가 기능을 사용하는 경우에만 OAuth 2.0을 사용하면 된다고 생각합니다. 예를 들자면 Youtube나 Instagram의 API를 사용하는 경우에는 IDP의 access token이 필요합니다.  
 
-만약 OAuth 2.0과 OIDC 모두를 지원한다면 OAuth 2.0이 레거시일 확률이 큽니다. 표준화가 적용된 OIDC가 확장성도 좋고 네트워크 비용도 적게 들 테니 OIDC를 쓰지 않을 이유는 없어 보입니다. 하지만 두 프로토콜 사이의 큰 차이는 없습니다.
+이외에 IDP를 통해서 유저를 인증하고 자체 토큰이나 세션을 두는 경우에는 **가능하면 OIDC를 쓰되 필요로 하는 IDP에서 제공하는 방식을 사용**하면 된다고 생각합니다. 만약 OAuth 2.0과 OIDC 모두를 지원한다면 OAuth 2.0이 레거시일 확률이 큽니다. 표준화가 적용된 OIDC가 확장성도 좋고 네트워크 비용도 적게 들 테니 OIDC를 쓰지 않을 이유는 없어 보입니다.  
+
+사실 OAuth와 OIDC 중 무엇을 사용하느냐는 크게 중요하지 않다고 생각합니다. 그것보다는 자사 서비스의 유저들이 어떤 IDP로 연결했을 때 IDP 사이트에 회원가입 없이 로그인할 수 있을지가 더 중요할 것입니다. 결론적으로 표준은 도구일 뿐이며 사용자에게 가장 편리하고 안전한 인증·인가 경험을 제공하는 것이 진짜 목표일 것입니다.
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7724800898778124" crossorigin="anonymous"></script>
+<!-- 수평-반응형-광고 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7724800898778124"
+     data-ad-slot="2434836777"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <br>
 
