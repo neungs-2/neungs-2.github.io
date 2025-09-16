@@ -95,6 +95,20 @@ Kafka 메시지는 압축될 수 있습니다. 압축 유형은 메시지의 일
 
 <br>
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7724800898778124" crossorigin="anonymous"></script>
+<!-- 수평-반응형-광고 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7724800898778124"
+     data-ad-slot="2434836777"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<br>
+
 > [ Reference ]  
 > [Conductor kafkademy - producer](https://learn.conduktor.io/kafka/kafka-producers/)  
 > [Confluent - Apache Kafka Producer Improvements with the Sticky Partitioner](https://www.confluent.io/blog/apache-kafka-producer-improvements-sticky-partitioner/)  

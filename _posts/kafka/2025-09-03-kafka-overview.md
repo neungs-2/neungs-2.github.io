@@ -124,6 +124,20 @@ date: 2025-09-03
 
 <br>
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7724800898778124" crossorigin="anonymous"></script>
+<!-- 수평-반응형-광고 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7724800898778124"
+     data-ad-slot="2434836777"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<br>
+
 > [ Reference ]  
 > [Confluence Apache Kafka](https://docs.confluent.io/kafka/introduction.html)  
 > [Conducktor kafkademy](https://learn.conduktor.io/kafka/what-is-apache-kafka/)   
