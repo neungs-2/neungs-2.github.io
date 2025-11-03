@@ -113,7 +113,7 @@ Major GC는 **Old generation에서의 GC 동작**입니다. Old generation은 �
 ### Serial GC
 
 - 가장 단순한 방식의 GC로 CPU가 싱글코어일 때 개발
-- Minor GC는 **Mark-Sweep**으로 동작하고 Major GC는 **Mark-Sweel-Compact**를 사용
+- Minor GC는 **Mark-Sweep**으로 동작하고 Major GC는 **Mark-Sweep-Compact**를 사용
 - GC를 처리하는 쓰레드가 1개라서 STW 시간이 긴 알고리즘
 
 ### Parallel GC
