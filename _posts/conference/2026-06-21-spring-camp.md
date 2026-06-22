@@ -19,6 +19,8 @@ date: 2026-06-21
 
 각 세션을 되짚으며 기억에 남은 내용들을 남겨두려 합니다.
 
+- [Spring Camp 2026](https://springcamp.ksug.org/2026/ko/)
+
 <br>
 
 ## Spring I/O 2026 — 변화하는 스프링, 떠오르는 AI, 그리고 우리의 준비
